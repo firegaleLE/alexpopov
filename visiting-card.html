@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Алексей Попов — сайт-визитка</title>
+<meta name="description" content="Сайт-визитка: чем я занимаюсь и как со мной связаться.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 48px 40px;
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  }
+  .avatar {
+    width: 110px; height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e94560, #ff8a5b);
+    margin: 0 auto 24px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 44px; font-weight: bold;
+    letter-spacing: 2px;
+  }
+  h1 { font-size: 28px; margin-bottom: 8px; }
+  .subtitle { color: #a8b2d1; font-size: 17px; margin-bottom: 28px; }
+  .about { font-size: 15px; line-height: 1.6; color: #cdd5e8; margin-bottom: 32px; }
+  .links { display: flex; flex-direction: column; gap: 12px; }
+  .btn {
+    display: block;
+    padding: 14px 20px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .btn:hover { background: rgba(255,255,255,0.2); transform: translateY(-2px); }
+  .btn.primary { background: linear-gradient(135deg, #e94560, #ff8a5b); border: none; font-weight: 600; }
+  .footer { margin-top: 32px; font-size: 12px; color: #6b7594; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="avatar">ИИ</div>
+    <h1>Алексей Попов</h1>
+    <p class="subtitle">Для лабы в универе</p>
+    <p class="about">
+      Хочу сдать все лабы в универе. Все 20)
+    </p>
+    <div class="links">
+      <a class="btn primary" href="tel:+79001234567">+7 900 123-45-67</a>
+      <a class="btn" href="mailto:ivan@example.com">ivan@example.com</a>
+      <a class="btn" href="https://t.me/username">Telegram: @username</a>
+    </div>
+    <p class="footer">© 2026 Алексей Попов</p>
+  </div>
+</body>
+</html>
